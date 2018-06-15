@@ -1,0 +1,19 @@
+from tkinter import *
+
+def display():
+    print(text.get())
+
+root = Tk()
+root.title('assignment')
+root.geometry('500x500')
+text = Label(root, text='Enter Input ')
+text.grid(row=1, column=1, sticky=E)
+text = Entry(root)
+text.grid(row=1, column=2)
+displayB = Button(root, text='DISPLAY', command=display)
+displayB.grid(row=3, columnspan=2, sticky=W)
+root.mainloop()
+
+output
+
+Harshit

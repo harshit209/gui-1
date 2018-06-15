@@ -1,0 +1,21 @@
+from tkinter import *
+global h
+def change():
+    h.config( text='Harshit Arora', bg='lightgreen', font='Times 15 bold ')
+    h.pack()
+
+root = Tk()
+root.title('Assignment')
+root.geometry('300x300')
+root.configure(background='#EFFEEE')
+frame=Frame(root,bg='black')
+frame.pack()
+#global h
+h = Label(frame, text='Harshit', bg='lightblue', font='Ariel 15 bold ')
+h.pack(fill=X, side=TOP)
+exitB = Button(frame, text='EXIT', command=root.destroy, bg='grey', font='Times 15 bold ')
+changeB = Button(root, text= 'CHANGE', command=change, bg='yellow', font='Times 15 bold ')
+exitB.pack(fill=X,side=BOTTOM)
+changeB.pack(side=BOTTOM)
+frame.mainloop()
+root.mainloop()

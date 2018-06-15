@@ -1,0 +1,17 @@
+from tkinter import *
+
+def display():
+    t = Label(root, text='First GUI', bg='red', font='Times 15 bold ')
+    t.pack()
+
+root = Tk()
+root.title('assignment')
+root.geometry('500x500')
+root.configure(background='#EFFEEE')
+h = Label(root, text='Hello World!!', bg='grey', font='Ariel 15 bold ')
+h.pack(fill=X, side=TOP)
+dispB = Button(root, text='Submit', bg='lightgreen', font='Times 15 bold ', command=display)
+exitB = Button(root, text='EXIT', bg='blue', font='Times 15 bold',command=root.destroy)
+exitB.pack(fill=X, side=BOTTOM)
+dispB.pack(side=BOTTOM)
+root.mainloop()

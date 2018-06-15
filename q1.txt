@@ -1,0 +1,11 @@
+from tkinter import *
+
+root = Tk()
+root.title('hello world')
+root.geometry('500x500')
+root.configure(background='#EFFEEE')
+h = Label(root, text='Hello World!!', bg='grey', font='Times 25 bold')
+h.pack()
+exitB = Button(root, text='EXIT',bg='lightgreen', font='Arial 20 bold', command=root.destroy)
+exitB.pack(fill=X, side=BOTTOM)
+root.mainloop()
